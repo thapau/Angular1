@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="../css/mycss.css"> 
+<script src="../js/myscript.js"></script> 
+<title>Approval</title> 
+</head> 
+
+<body class="mainContainer" onload="updateSite3()"> 
+  <div class='grid'>
+    <header>
+      <div class="info">
+      <h2 id="print_loanID">Application Approval</h2> 
+    </div>
+      <a href="../index.html">Home</a> |  
+      <a href="../pages/listing.html">Listing</a> </p> 
+		</header>
+  </div> 
+<section class='c1'>
+  <form action="" id="loanForm" class="formContainer"> 
+    <div class="flex-container">	
+      <div class="flex-item-left">
+        <label for="loanID">Loan ID: </label> 
+        <output id="loanID"> </output><br> 
+
+        <label for="curDate">Date: </label> 
+        <output id="curDate"> </output> <br> 
+
+        <label for="compName">Company name: </label> 
+        <output id="compName"> </output> <br> 
+
+        <label for="compEmail">Email address:</label> 
+        <output id="compEmail"> </output> <br> 
+
+        <label for="compPhone">Phone number:</label> 
+        <output id="compPhone"> </output> <br> 
+
+        <label for="sales">Annual sales:</label> 
+        <output id="sales"> </output> <br>
+      </div> 
+
+      <div class="flex-item-right">		
+        <label for="borAmt">Borrow amount:</label> 
+        <output id="borAmt"> </output><br> 
+
+        <label for="terms">Payment terms:</label> 
+        <output id="terms"> </output><br> 
+
+        <label for="interest">Interest:</label> 
+        <output id="interest"> </output><br> 
+
+        <label for="com">Comments</label> 
+        <input type="text" id="com" placeholder="Enter text here..."> <br> 
+
+        <label for="status">Status: </label> 
+        <select type="text" id="status"> 
+          <option value="Pending">Select an option</option> 
+          <option value="Approved">Approved</option> 
+          <option value="Rejected">Rejected</option> 
+        </select>   
+        <input type="submit" onclick="updateData()" value="Update"> 
+      </div>
+    </div>    
+  </form> 
+</section>
+
+<footer> 
+  <p class="um">thapau<br>
+    Davis Campus<br>
+</footer> 
+
+</body> 
+
+</html>
+
