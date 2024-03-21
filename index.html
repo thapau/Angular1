@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Assignment 1</title> 
+    <link rel="stylesheet" href="css/mycss.css"> 
+	<script src="js/myscript.js"></script>
+</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <body class="mainContainer" onload="updateSite()">   
+   <main>
+   <div class='grid'>
+    <header><h1><h2>Loan Application</h2> 
+			<p>Assignment #1 | Umesh Thapa | 991650786</p> 
+			<p>Navigate:  <a href="pages/listing.html">Listing</a> </p>
+		</header>
+
+	<section class='c1'>
+	<form action="" id="loanForm" onsubmit="return saveData()"> 			
+	<div class="flex-container">			
+		<div class="flex-item-left">
+			<label for="loanID">Loan ID: </label>
+			<output id="loanID"> </output><br>
+
+			<label for="curDate">Date: </label>
+			<output id="curDate"> </output><br>
+
+			<label for="compName">Company name: </label>
+			<input type="text" id="compName" required><br> 
+
+			<label for="compEmail">Email address: </label>
+			<input type="text" id="compEmail" placeholder="abc@xyx.com"required><br> 
+
+			<label for="compPhone">Phone number: </label>
+			<input type="number" id="compPhone" placeholder="(000)-000-000" required><br> 
+			
+			<label for="sales">Annual sales: </label>
+			<input type="number" id="sales" placeholder="Number"><br> 
+		</div>
+
+		<div class="flex-item-right">	
+			<label for="borAmt">Borrow amount: </label>
+			<input type="number" id="borAmt" placeholder="Number" required><br> 
+
+			<label for="terms">Payment terms: </label>
+			<input type="number" id="terms" placeholder="Number" required><br> 
+
+			<label for="interest">Interest: </label>
+			<output id="interest" style="color: grey;">Interest</output><br> 
+
+			<label for="comments">Comments: </label>
+			<textarea id="comment" rows="10" cols="40"required></textarea><br><br>
+
+			<input type="hidden" id="status"> 
+			<input type="button" onclick="calinterest()" value="Calculate Interest"><br>
+			<input type="submit" value="Submit Application"> 
+		</div>
+	</div>
+	</form> 
+	</section>
+		
+<footer>
+		<p class="um">thapau<br>
+		Davis Campus<br>
+</footer>
+</body>
+</html>	
